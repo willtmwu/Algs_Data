@@ -1,0 +1,25 @@
+def insertionSort(ar):    
+    E = ar[len(ar) -1]
+    index = len(ar)-2
+
+    if ar[index] <= E:
+        print(" ".join(str(x) for x in ar))
+        return ""
+
+    while index >= 0:
+        if E < ar[index]:
+            ar[index+1] = ar[index]
+            if index == 0:
+                ar[0] = E
+        else:
+            ar[index+1] = E
+        index = index - 1
+
+        print(" ".join(str(x) for x in ar))
+
+    
+    return ""
+
+m = input()
+ar = [int(i) for i in raw_input().strip().split()]
+insertionSort(ar)

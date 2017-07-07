@@ -17,7 +17,6 @@ def quick_sort(input_array, lowIndex, highIndex):
         return input_array
     else:
         print("{} -> {}".format(lowIndex, highIndex))
-
         
         cmpIndex = lowIndex
         pivotIndex = highIndex
@@ -50,4 +49,4 @@ def quick_sort(input_array, lowIndex, highIndex):
 
 test = [21, 4, 1, 3, 9, 20, 25, 6, 21, 14]
 test2 = [8,3,1,7,0,10,2,11]
-print quick_sort(test, 0, len(test)-1)
+print quick_sort(test, 0, len(test2)-1)
